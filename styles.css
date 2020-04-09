@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    color: #444;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    margin-top: 26vh;
+    font-weight: 600;
+    margin-left: 10%;
+    font-size: 150%;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(2000deg);
+    }
+}
+
+.leftInfo img {
+    position: absolute;
+    left: -8%;
+    top: -10%;
+    width: 100%;
+    max-width: 900px;
+    z-index: -1;
+    transform-origin: center;
+    animation: rotating 15000ms ease-in-out infinite alternate;
+}
+
+.rightInfo img {
+    margin-top: 37vh;
+    margin-left: -10%;
+    width: 100%;
+    z-index: ;
+}
